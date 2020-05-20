@@ -15,6 +15,11 @@ $("#hobbyDropdown").on("change", function () {
   loadVideo();
 })
 
+$("img").click(function(){
+  query = $(this).attr("data-hobby")
+ loadVideo();
+})
+
 //Listen Submit
 $("#searchForm").on("submit", function (event) {
   event.preventDefault()
